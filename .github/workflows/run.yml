@@ -11,6 +11,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Print Start Time
+        run: echo "Start time: $(date)"
+        
       - name: Checkout codes
         uses: actions/checkout@v3
 
