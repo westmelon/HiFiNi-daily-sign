@@ -40,7 +40,7 @@ func extractSign(input string) (string, error) {
 
 // 获取Key
 func GetSignKey(client *http.Client) (string, error) {
-	urlStr := "https://www.hifini.com/"
+	urlStr := "https://www.hifiti.com/"
 	cookie := os.Getenv("COOKIE")
 	if cookie == "" {
 		fmt.Println("COOKIE不存在，请检查是否添加")
@@ -78,7 +78,7 @@ func GetSignKey(client *http.Client) (string, error) {
 // SignIn 签到
 func SignIn(client *http.Client, key string) bool {
 	//生成要访问的url
-	urlStr := "https://www.hifini.com/sg_sign.htm"
+	urlStr := "https://www.hifiti.com/sg_sign.htm"
 	cookie := os.Getenv("COOKIE")
 	if cookie == "" {
 		fmt.Println("COOKIE不存在，请检查是否添加")
