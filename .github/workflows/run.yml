@@ -1,6 +1,7 @@
 name: HiFiNi 自动签到2
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
